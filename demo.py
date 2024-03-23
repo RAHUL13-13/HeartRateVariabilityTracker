@@ -1,11 +1,6 @@
 from argparse import ArgumentParser
 import sys
-
-sys.path.append("C:\\Users\\rahul\\PycharmProjects\\pythonProject1\\venv\\Lib\\site-packages")
-sys.path.append("C:\\Users\\rahul\\AppData\\Roaming\\Python\\Python36\\Scripts")
-
 import cv2
-
 from algorithms.dense_optical_flow import dense_optical_flow
 from algorithms.lucas_kanade import lucas_kanade_method
 
