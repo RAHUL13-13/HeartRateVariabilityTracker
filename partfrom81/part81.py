@@ -4,9 +4,10 @@ import os
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor("shape_predictor_81_face_landmarks.dat")
 
+file = "/pythonProject1/HRV/png_"
 
-for filename in os.listdir("/pythonProject1/HRV/png_"):
-    img = cv2.imread(os.path.join("/pythonProject1/HRV/png_", filename))
+for filename in os.listdir(file):
+    img = cv2.imread(os.path.join(file, filename))
     (h, w, _) = img.shape
     h2 = 600
     w2 = int(h2 * h / w)
