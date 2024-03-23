@@ -9,8 +9,6 @@ import os
 unknown_image = face_recognition_models.load_image_file("png_//Frame0000.png")
 face_locations = face_recognition_models.face_locations(unknown_image) # detects all the faces in image
 t = len(face_locations)
-# print(len(face_locations))
-# print(face_locations)
 
 face_landmarks_list = face_recognition_models.face_landmarks(unknown_image)
 
